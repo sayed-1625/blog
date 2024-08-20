@@ -128,9 +128,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),
 )
 
-#1 web
-MEDIA_URL='/media/'
-
 #1 render static
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 

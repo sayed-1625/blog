@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-7uodv6h(0j)_q2@d0yj#s%wky(dcf%yqn9^#rt#$e#m!za8#a-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -76,15 +76,13 @@ WSGI_APPLICATION = 'server.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+import dj_database_url
+
+# Database
+# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dbBlog',
-        'USER': 'postgres',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
-        'PORT': 5432,
-    }
+        "default": dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 
@@ -129,6 +127,10 @@ STATIC_URL = '/static/'
 #1
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),
 )
+
+#1 web
+MEDIA_URL='/media/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

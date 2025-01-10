@@ -24,4 +24,5 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
+    path('manual-de-usuario/', views.manual_de_usuario, name='manual_de_usuario'),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

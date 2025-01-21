@@ -18,6 +18,7 @@ from django.urls import path
 
 from home import views
 
+from django.conf.urls import include
 from django.conf.urls.static import static
 from django.conf import settings
 
@@ -25,4 +26,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
     path('manual-de-usuario/', views.manual_de_usuario, name='manual_de_usuario'),
-]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('descripcion/', views.descripcion, name='descripcion'),
+    path('miDoctorYa/', views.miDoctorYa, name='miDoctorYa'),
+    path('home/', include('home.urls')),  # Include the home app's urls
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

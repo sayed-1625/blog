@@ -7,3 +7,9 @@ def index(request):
 
 def manual_de_usuario(request):
     return render(request, 'home/manual_de_usuario.html')
+
+def descripcion(request):
+    return render(request, 'gmys/proyecto.html', {'titulo': 'La Importancia de Planificar Antes de Codificar'})
+
+def miDoctorYa(request):
+    return render(request, 'midoctorya/proyecto.html', {'titulo': 'Preámbulo del Proyecto de Gestión de Pacientes'})    

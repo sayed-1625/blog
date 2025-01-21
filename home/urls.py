@@ -1,6 +1,8 @@
-from django.conf.urls import url, include
-from home.views import index
+from django.urls import path
+from home.views import index, descripcion, miDoctorYa
 
 urlpatterns = [
-    url(r'^index$', index),
+    path('index/', index, name='index'),
+    path('gmys/', descripcion, name='gmys'),
+    path('miDoctorYa/', miDoctorYa, name='miDoctorYa'),
 ]

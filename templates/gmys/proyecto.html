@@ -1,0 +1,251 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Index - iPortfolio Bootstrap Template</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Inline CSS -->
+    <style>
+        /* Estilos generales para todo el cuerpo */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            /* Fondo claro */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo para el título */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-top: 30px;
+        }
+
+        /* Estilo para los párrafos */
+        p {
+            text-align: justify;
+            font-size: 1.1em;
+            margin: 20px auto;
+            padding: 10px;
+            max-width: 800px;
+            color: #34495e;
+        }
+
+        /* Estilo para el enlace de vuelta */
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #2980b9;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo de fondo para cada sección */
+        section {
+            background-color: #ffffff;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo para el encabezado de la página */
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        /* Agregar espaciado y márgenes entre los elementos */
+        .container {
+            padding: 0 20px;
+        }
+
+        /* Estilo general para la imagen */
+        img {
+            width: 100%;
+            /* En móviles, la imagen ocupa todo el ancho */
+            height: auto;
+            /* Mantiene la proporción de la imagen */
+            border-radius: 8px;
+            /* Bordes redondeados */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            /* Sombra suave */
+            margin-top: 20px;
+            /* Espaciado superior */
+            margin-bottom: 20px;
+            /* Espaciado inferior */
+        }
+
+        /* Contenedor centrado */
+        .img-container {
+            text-align: center;
+            /* Centra la imagen dentro del contenedor */
+        }
+
+        /* Media Query para pantallas más grandes (desde 992px de ancho) */
+        @media (min-width: 992px) {
+            img {
+                width: 80%;
+                /* Limita el ancho de la imagen al 80% del contenedor en pantallas grandes */
+                max-width: 800px;
+                /* Asegura que la imagen no exceda un tamaño máximo */
+                margin-left: auto;
+                /* Centra la imagen */
+                margin-right: auto;
+                /* Centra la imagen */
+            }
+        }
+    </style>
+
+    <!-- =======================================================
+        * Template Name: iPortfolio
+        * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+        * Updated: Jun 29 2024 with Bootstrap v5.3.3
+        * Author: BootstrapMade.com
+        * License: https://bootstrapmade.com/license/
+        ======================================================== -->
+</head>
+
+<body>
+
+    <body>
+        <div class="container">
+            <h1>{{ titulo }}</h1>
+            <div class="img-container">
+                <img src="{% static 'assets/img/fd2.jpg' %}" alt="Books" class="img-fluid">
+            </div>
+            <p>En el desarrollo de cualquier proyecto tecnológico, es tentador comenzar a escribir código desde el
+                primer momento. Sin embargo, para garantizar el éxito del proyecto, es fundamental realizar un trabajo
+                previo que establezca bases sólidas. Este trabajo no solo asegura que el resultado final cumpla con las
+                expectativas, sino que también evita problemas como retrabajos, sobrecostos y retrasos.
+
+                Antes de escribir una sola línea de código, se deben abordar tres pilares fundamentales: la
+                planificación estratégica, el diseño de la interfaz de usuario y experiencia (UI/UX), y la definición
+                clara del alcance del proyecto. Estos elementos no solo permiten visualizar el producto final, sino
+                también identificar posibles riesgos y garantizar que los requerimientos sean claros y alcanzables.</p>
+            <p>1️⃣ Planificación Estratégica <br>
+                La planificación es el cimiento de cualquier proyecto exitoso. Durante esta etapa, se deben responder
+                preguntas clave:
+
+                ¿Cuál es el problema que estamos resolviendo?
+                ¿Quién es el usuario objetivo?
+                ¿Cuáles son los requerimientos funcionales y no funcionales?
+                Se elaboran documentos como el catálogo de requerimientos, se identifican los objetivos principales y
+                secundarios del proyecto, y se define el producto mínimo viable (MVP). Además, es aquí donde se
+                establecen los plazos, los recursos necesarios y las tecnologías que se usarán.</p>
+            <div class="img-container">
+                <img src="{% static 'assets/img/req.png' %}" alt="Books" class="img-fluid">
+            </div>
+            <p>2️⃣ Diseño UI/UX. <br>
+                El diseño de la interfaz de usuario (UI) y la experiencia de usuario (UX) son esenciales para garantizar
+                que el sistema sea intuitivo, funcional y agradable para los usuarios. Antes de codificar, se crean:
+
+                Wireframes: Representaciones básicas de las pantallas y su estructura.
+                Prototipos: Versiones más detalladas que simulan las interacciones del usuario.
+                Guías de estilo: Documentos que establecen los colores, tipografías y componentes reutilizables.
+                Este enfoque centrado en el usuario no solo mejora la usabilidad del producto, sino que también reduce
+                costos a largo plazo, al identificar problemas de diseño antes de que lleguen a la implementación.</p>
+            <h2>Secuencia de uso</h2>
+            <div class="img-container" style="display: flex;">
+                <img src="{% static 'assets/img/wf.png' %}" alt="Books" class="img-fluid">
+                <img src="{% static 'assets/img/wf2.png' %}" alt="Books" class="img-fluid">
+
+            </div>
+            <p>3️⃣ Definición del Alcance del Proyecto. <br>
+                Definir el alcance del proyecto implica delimitar las funciones y características que incluirá la
+                solución final. Un alcance claro previene malentendidos y asegura que el equipo de desarrollo esté
+                alineado con las expectativas del cliente. Esta etapa incluye:
+            </p>
+            <ul style="text-align: justify;
+                font-size: 1.1em;
+                margin: 20px auto;
+                padding: 10px;
+                max-width: 800px;
+                color: #34495e;">
+                <li>La creación de casos de uso que describan las interacciones entre los usuarios y el sistema.</li>
+                <li>La identificación de entregables, es decir, qué funcionalidades estarán listas en cada fase del
+                    desarrollo.</li>
+                <li>La estimación de tiempos y recursos necesarios para cada tarea.</li>
+            </ul>
+            <p>📍 Planificar antes de codificar.
+
+                En mi reciente proyecto, desarrollé una plataforma de monitoreo de vehículos en tiempo real con
+                funcionalidades avanzadas como generación de reportes históricos y alertas por eventos (exceso de
+                velocidad, etc.). Este proyecto fue un claro ejemplo de cómo una planificación sólida puede garantizar
+                el éxito y reducir riesgos en el desarrollo.
+                <br><br>
+                💡 Pasos clave del proyecto:
+            </p>
+            <p>Implementación Tecnológica:</p>
+            <ul style="text-align: justify;
+                font-size: 1.1em;
+                margin: 20px auto;
+                padding: 10px;
+                max-width: 800px;
+                color: #34495e;">
+                <li>Frontend: React con Material-UI para componentes dinámicos y una experiencia fluida.</li>
+                <li>Backend: Node.js y Express con autenticación JWT y WebSocket para actualizaciones en tiempo real.
+                </li>
+                <li>Base de Datos: PostgreSQL con optimización para consultas geoespaciales.</li>
+                <li>Integraciones: OpenStreetMap para mapas interactivos y Twilio para notificaciones SMS.</li>
+            </ul>
+            <p>Antes de la eleccion del tipo de herramienta o framework es importante pensar que va solucionar la
+                pagina, la aplicacion o el sistema a desarrollar. En el mercado actual con saturaciones en este mercado
+                todas estas herramientas tienen un fin y pertenece a una fraccion de este. </p>
+            <p>¡Identificar el problema! <br>
+                Este paso se enfoca en entender qué necesidad o problema estás resolviendo. Hazte estas preguntas clave:</p>
+            <a href="{% url 'index' %}">Volver al inicio</a>
+        </div>
+    </body>
+
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+    <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'assets/vendor/typed.js/typed.umd.js' %}"></script>
+    <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+    <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+    <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+    <!-- Main JS File -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+
+</html>

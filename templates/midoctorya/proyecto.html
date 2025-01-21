@@ -1,0 +1,240 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Index - iPortfolio Bootstrap Template</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Inline CSS -->
+    <style>
+        /* Estilos generales para todo el cuerpo */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            /* Fondo claro */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo para el título */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-top: 30px;
+        }
+
+        /* Estilo para los párrafos */
+        p {
+            text-align: justify;
+            font-size: 1.1em;
+            margin: 20px auto;
+            padding: 10px;
+            max-width: 800px;
+            color: #34495e;
+        }
+
+        /* Estilo para el enlace de vuelta */
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #2980b9;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo de fondo para cada sección */
+        section {
+            background-color: #ffffff;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo para el encabezado de la página */
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        /* Agregar espaciado y márgenes entre los elementos */
+        .container {
+            padding: 0 20px;
+        }
+
+        /* Estilo general para la imagen */
+        img {
+            width: 100%;
+            /* En móviles, la imagen ocupa todo el ancho */
+            height: auto;
+            /* Mantiene la proporción de la imagen */
+            border-radius: 8px;
+            /* Bordes redondeados */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            /* Sombra suave */
+            margin-top: 20px;
+            /* Espaciado superior */
+            margin-bottom: 20px;
+            /* Espaciado inferior */
+        }
+
+        /* Contenedor centrado */
+        .img-container {
+            text-align: center;
+            /* Centra la imagen dentro del contenedor */
+        }
+
+        /* Media Query para pantallas más grandes (desde 992px de ancho) */
+        @media (min-width: 992px) {
+            img {
+                width: 80%;
+                /* Limita el ancho de la imagen al 80% del contenedor en pantallas grandes */
+                max-width: 800px;
+                /* Asegura que la imagen no exceda un tamaño máximo */
+                margin-left: auto;
+                /* Centra la imagen */
+                margin-right: auto;
+                /* Centra la imagen */
+            }
+        }
+    </style>
+
+    <!-- =======================================================
+        * Template Name: iPortfolio
+        * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+        * Updated: Jun 29 2024 with Bootstrap v5.3.3
+        * Author: BootstrapMade.com
+        * License: https://bootstrapmade.com/license/
+        ======================================================== -->
+</head>
+
+<body>
+
+    <body>
+        <div class="container">
+            <div class="img-container">
+                <img src="{% static 'assets/img/doctor.png' %}" alt="Books" class="img-fluid">
+            </div>
+            <h1>{{ titulo }}</h1>
+            <p>Antes de comenzar con el desarrollo de la plataforma de gestión de pacientes, se realizaron una serie de
+                pasos de planificación y diseño para asegurar que el proyecto estuviera bien estructurado, alineado con
+                las necesidades del cliente y con una experiencia de usuario intuitiva.</p>
+            <p>1. Catálogo de Requerimientos:
+                El primer paso fue la recopilación de los requerimientos esenciales del sistema. Se definieron las
+                funcionalidades clave de la plataforma, como el registro de pacientes, la gestión de citas médicas, el
+                seguimiento del historial clínico, entre otras. Este catálogo ayudó a establecer las prioridades y las
+                expectativas tanto del cliente como del equipo de desarrollo. Algunos de los puntos más importantes en
+                el catálogo fueron:
+            </p>
+
+            <ul style="text-align: justify;
+            font-size: 1.1em;
+            margin: 20px auto;
+            padding: 10px;
+            max-width: 800px;
+            color: #34495e;">
+                <li>Gestión de datos del paciente: Incluir información personal, médica y de contacto.</li>
+                <li>Agenda de citas: Sistema de agendamiento de citas con recordatorios automáticos.</li>
+                <li>Seguridad de la información: Acceso restringido y control de permisos.</li>
+                <li>Generación de informes médicos: Automatización de informes a partir de datos de pacientes</li>
+            </ul>
+
+            <p>2. Manual de Identidad:
+                El manual de identidad visual fue fundamental para garantizar la coherencia en todos los elementos
+                gráficos de la plataforma. Incluye directrices para el uso adecuado del logo, paleta de colores,
+                tipografía y estilo visual general. El objetivo era lograr una estética profesional, moderna y que
+                reflejara confianza y claridad en la interfaz. La identidad visual también fue aplicada en los mockups y
+                en la interfaz final del proyecto.</p>
+            <div class="img-container">
+                <img src="{% static 'assets/img/doctor2.png' %}" alt="Books" class="img-fluid">
+            </div>
+            <p>3. Mockups y Prototipos
+                Se crearon mockups de alta fidelidad para visualizar la estructura de la plataforma antes de la
+                codificación. Estos mockups fueron diseñados para asegurar que los flujos de usuario fueran intuitivos y
+                facilitaran la navegación a lo largo del sistema. A través de estas representaciones visuales se
+                pudieron identificar los puntos críticos de la interfaz de usuario, como la ubicación de botones,
+                formularios de registro, la presentación de datos de pacientes, entre otros.</p>
+
+            <ul style="text-align: justify;
+            font-size: 1.1em;
+            margin: 20px auto;
+            padding: 10px;
+            max-width: 800px;
+            color: #34495e;">
+                <li>Diseño de pantallas clave: Home, vista de pacientes, agendar citas, historial médico, entre otras.
+                </li>
+                <li>Prototipo interactivo: Un prototipo funcional que permitió explorar la interfaz antes de la
+                    implementación, garantizando la validación de los requisitos visuales y funcionales.</li>
+            </ul>
+
+            <div class="img-container">
+                <img src="{% static 'assets/img/doctor3.png' %}" alt="Books" class="img-fluid">
+            </div>
+
+            <div class="img-container">
+                <img src="{% static 'assets/img/doctor4.png' %}" alt="Books" class="img-fluid">
+            </div>
+
+            <div class="img-container">
+                <img src="{% static 'assets/img/doctor5.png' %}" alt="Books" class="img-fluid">
+            </div>
+
+            <p>4. Planificación Técnica
+            Con los requerimientos y los diseños listos, se estableció un plan técnico para el desarrollo de la
+            plataforma. Esto incluyó la selección de las tecnologías, la estructura del código y la base de datos. La
+            planificación técnica también cubrió la estrategia de implementación de la seguridad, la gestión de datos y
+            las pruebas del sistema.</p>
+
+            <a href="{% url 'index' %}">Volver al inicio</a>
+        </div>
+    </body>
+
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+    <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'assets/vendor/typed.js/typed.umd.js' %}"></script>
+    <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+    <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+    <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+    <!-- Main JS File -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+
+</html>
